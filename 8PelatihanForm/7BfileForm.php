@@ -62,22 +62,25 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-	<!--  -->
+	<!-- Testing -->
 	<script>
 		$(document).ready(function(){
 			$('button').on('click', function(){
-				var nama = document.getElementById("nm").value;
+				var nm = document.getElementById("nm").value;
 				var uts = document.getElementById("uts").value;
 				var uas = document.getElementById("uas").value;
 				var tugas = document.getElementById("tugas").value;
 
-				$('#form-inputan').css("display", "none");
+				
+
+				// alert("Nama : " + nm);
 
 				$.ajax({
 					type: 'post',
 					url: 'testing.php',
-					data:{nama:nama, uts:uts, uas:uas, tugas:tugas},
+					data:{nama:nm, uts:uts, uas:uas, tugas:tugas},
 					success: function(data){
+						$('#form-inputan').css("display", "none"); // membuat card menjadi display: none;
 						$(".tampilan-Informasi").html(data);
 					}
 				});

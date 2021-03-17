@@ -3,22 +3,22 @@
 			<h1 class="display-4">Informasi Nilai Siswa</h1>
 
 			<p class="lead">Nilai UTS <?= $_POST["nama"];?> : 
-				<b> <?= $_POST["UTS"];  ?> </b>
+				<b> <?= $_POST["uts"];  ?> </b>
 			</p>
 			<p class="lead">Nilai UAS <?= $_POST["nama"];?> :  
-				<b> <?= $_POST["UAS"];  ?>
+				<b> <?= $_POST["uas"];  ?>
 			</p>
 			<p class="lead">Nilai Tugas <?= $_POST["nama"];?> :  
-				<b> <?= $_POST["TUGAS"];  ?>
+				<b> <?= $_POST["tugas"];  ?>
 			</p>
 			<hr class="my-4">
 
 			<!-- Proses -->
 			<?php 
 			$nama = $_POST["nama"];
-			$uts = $_POST["UTS"];
-			$uas = $_POST["UAS"];
-			$tugas = $_POST["TUGAS"];
+			$uts = $_POST["uts"];
+			$uas = $_POST["uas"];
+			$tugas = $_POST["tugas"];
 
 			$totalNilaiUTS = 0.35*$uts;
 			$totalNilaiUAS =  0.5*$uas;

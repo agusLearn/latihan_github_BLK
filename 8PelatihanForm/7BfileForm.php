@@ -67,21 +67,20 @@
 		$(document).ready(function(){
 			$('button').on('click', function(){
 				var nama = document.getElementById("nm").value;
-				var uts = document.getElementByName("UTS");
-				var uas = document.getElementByName("UAS");
-				var tugas = document.getElementByName("TUGAS");
+				var uts = document.getElementById("UTS").value;
+				var uas = document.getElementById("UAS").value;
+				var tugas = document.getElementById("TUGAS").value;
 
-				alert("Nama : "+ nama);
-				// $('#form-inputan').css("display", "none");
+				$('#form-inputan').css("display", "none");
 
-				// $.ajax({
-				// 	type: 'post',
-				// 	url: 'testing.php',
-				// 	data:{nama:nama, uts:uts, uas:uas, tugas:tugas},
-				// 	success: function(data){
-				// 		$("#tampilan-Informasi").html(data);
-				// 	}
-				// });
+				$.ajax({
+					type: 'post',
+					url: 'testing.php',
+					data:{nama:nama, uts:uts, uas:uas, tugas:tugas},
+					success: function(data){
+						$("#tampilan-Informasi").html(data);
+					}
+				});
 			});
 		});
 	</script>

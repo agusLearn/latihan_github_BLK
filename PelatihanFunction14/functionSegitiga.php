@@ -37,10 +37,10 @@
     }
 
 
-    echo "Luas Segitiga             = ". luasSegi_tiga(10, 6). "</br>";
-    echo "Keliling Segitiga         = ". keliling_segiTiga(10, 6, 4). "</br>";
-    echo "Luas Lingkaran            = ". luas_lingkaran(10). "</br>";
-    echo "keliling Lingkaran        = ". keliling_lingkaran(10). "</br>";
-    echo "Luas Jajaran Genjang      = ". luas_jajaranGenjang(10, 20). "</br>";
-    echo "Keliling Jajarang Genjang = ". keliling_jajaranGenjang(10, 20);
+    // echo "Luas Segitiga             = ". luasSegi_tiga(10, 6). "</br>";
+    // echo "Keliling Segitiga         = ". keliling_segiTiga(10, 6, 4). "</br>";
+    // echo "Luas Lingkaran            = ". luas_lingkaran(10). "</br>";
+    // echo "keliling Lingkaran        = ". keliling_lingkaran(10). "</br>";
+    // echo "Luas Jajaran Genjang      = ". luas_jajaranGenjang(10, 20). "</br>";
+    // echo "Keliling Jajarang Genjang = ". keliling_jajaranGenjang(10, 20);
 

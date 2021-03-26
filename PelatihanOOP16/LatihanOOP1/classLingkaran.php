@@ -10,13 +10,13 @@ class Lingkaran
             $this->r = $jari_jari;
         }
 
-        public function setJariLingkaran($jari){
-            $this->r = $jari;
-        }
+        // public function setJariLingkaran($jari){
+        //     $this->r = $jari;
+        // }
 
         public function getKeliling(){
-            $this->keliling = 3.14 * $this->r * $this->r;
-            return $this->keliling;
+            // $this->keliling = 3.14 * $this->r * $this->r;
+            return 3.14 * $this->r * $this->r;
         }
 
         public function getLuas(){

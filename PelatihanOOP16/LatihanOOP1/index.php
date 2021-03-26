@@ -66,7 +66,7 @@
         <div class="card">
             <h1>Form Hitung Keliling dan Luas Lingkaran</h1>
             <form action="" method="post">
-                <input type="number" name="jari-jari" min="0">
+                <input type="number" name="jari-jari" min="0" required>
                 <button type="submit" name="hitungKeliling">Hitung Keliling</button>
                 <button type="submit" name="hitungLuas">Hitung Luas</button>
                 <button type="submit" name="kelilingLuas">Hitung Keliling dan Luas</button>

@@ -22,6 +22,19 @@ session_start();
     <div align="center">
         <div class="jumbotron" style="max-width: 47rem;">
 
+            <?php if (isset($_SESSION['login'])) : ?>
+                <?php  
+
+                if ($_SESSION['login'] == 1) {
+                ?>
+                    <div class="alert  alert-success alert-dismissible fade show" role="alert">
+                        <?= $_SESSION['pesan_login']; ?>
+                    </div>
+                <?php } ?>
+
+            <?php endif; ?>
+
+            <a href="#" class="btn btn-danger float-right">Logout</a>
             <h3 class="dbTamu" align="left">Input Data Tamu</h3>
 
             <!-- Cek Email -->
@@ -34,7 +47,7 @@ session_start();
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                         <?= $_SESSION['email_message']; ?>
                     </div>
-                <?php } ?>  
+                <?php } ?>
 
 
             <?php endif; ?>
@@ -227,6 +240,7 @@ session_start();
             unset($_SESSION['insert_alert']);
             unset($_SESSION['email_cek']);
             unset($_SESSION['info_update']);
+            unset($_SESSION['login'])
             ?>
 
         </div>
